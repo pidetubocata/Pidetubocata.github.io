@@ -52,3 +52,46 @@ if ('serviceWorker' in navigator) {
       .catch(err => console.error('Error al registrar el Service Worker', err));
   });
 }
+// SUSTITUYE EL NÚMERO DE EJEMPLO POR EL TUYO:
+const TELEFONO_ENCARGADO = "34600000000"; 
+
+function generarPedido() {
+    const nombre = selectCliente.value;
+    const seleccionados = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+
+    if (!nombre) {
+        alert("Por favor, selecciona tu nombre.");
+        return;
+    }
+    if (seleccionados.length === 0) {
+        alert("Elige al menos un ingrediente.");
+        return;
+    }
+
+    // Mostrar el ticket en la pantalla de la web
+    document.getElementById('nombre-ticket').textContent = nombre;
+    const listaTicket = document.getElementById('ingredientes-ticket');
+    listaTicket.innerHTML = "";
+    
+    seleccionados.forEach(ing => {
+        let li = document.createElement('li');
+        li.textContent = ing;
+        listaTicket.appendChild(li);
+    });
+
+    document.getElementById('resultado').classList.remove('resultado-oculto');
+
+    // ENVIAR DIRECTO A WHATSAPP
+    const mensaje = `*PEDIDO DE BOCADILLO*\n` +
+                    `--------------------------\n` +
+                    `👤 *Cliente:* ${nombre}\n` +
+                    `🥖 *Ingredientes:* \n- ${seleccionados.join('\n- ')}`;
+
+    const mensajeURL = encodeURIComponent(mensaje);
+    const url = `https://api.whatsapp.com/send?phone=${TELEFONO_ENCARGADO}&text=${mensajeURL}`;
+
+    // Abrir WhatsApp automáticamente
+    setTimeout(() => {
+        window.open(url, '_blank');
+    }, 500);
+}
