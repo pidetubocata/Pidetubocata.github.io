@@ -1,6 +1,6 @@
 const clientes = ["Abraham", "Carlos", "Cristián", "Enrrique", "Giovanni", "Gonzalo", "Jean", "Juanjo", "Juanito", "Julian", "Miguel", "Vicente", "Willians"];
 
-const ingredientes = ["Lomo", "Pechuga de pollo", "Pechuga empanada", "Hamburguesa", "Ternera", "Bacon", "Queso", "Longaniza", "Tortilla de patata", "Tortilla de patata con cebolla", "Ajo aceite", "Mayonesa", "Huevo", "Pimiento", "Tomate", "Lechuga", "En plato"];
+const ingredientes = ["Lomo", "Pechuga de pollo", "Pechuga empanada", "Hamburguesa", "Ternera", "Bacon", "Queso", "Longaniza", "Tortilla de patata", "Tortilla de patata con cebolla", "Patatas", "Ajo aceite", "Mayonesa", "Huevo", "Pimiento", "Tomate", "Lechuga", "En plato"];
 
 const bebidas = ["Cocacola", "Cocacola cero", "Fanta", "Aquarius", "Agua", "Neste", "Zumo de piña", "Vino y gaseosa", "Cerveza", "Cerveza 00"];
 
