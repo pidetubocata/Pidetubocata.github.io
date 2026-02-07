@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocadillos App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>🥪 Pedido de Bocadillos</h1>
+    </header>
+
+    <main>
+        <section class="config-section">
+            <label for="cliente-select">¿Quién eres?</label>
+            <select id="cliente-select">
+                <option value="" disabled selected>Selecciona tu nombre</option>
+                </select>
+        </section>
+
+        <section class="ingredientes-section">
+            <h3>Elige tus ingredientes:</h3>
+            <div id="lista-ingredientes" class="grid-ingredientes">
+                </div>
+        </section>
+
+        <button id="btn-generar" onclick="generarPedido()">Confirmar Bocadillo</button>
+
+        <section id="resultado" class="resultado-oculto">
+            <h2>¡Pedido Listo!</h2>
+            <div class="ticket">
+                <p><strong>Bocadillo de:</strong> <span id="nombre-ticket"></span></p>
+                <p><strong>Ingredientes:</strong></p>
+                <ul id="ingredientes-ticket"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+<section class="ingredientes-section">
+    <h3>🥤 Bebida:</h3>
+    <select id="bebida-select">
+        <option value="Ninguna">Sin bebida</option>
+        </select>
+</section>
+
+<section class="ingredientes-section">
+    <h3>☕ Café / Infusión:</h3>
+    <select id="cafe-select">
+        <option value="Ninguno">Sin café</option>
+        </select>
+</section>
+
+<div class="botones-container">
+    <button id="btn-generar" onclick="generarPedido()">Confirmar y WhatsApp 📲</button>
+    <button id="btn-borrar" class="btn-secundario" onclick="limpiarFormulario()">Borrar Todo 🗑️</button>
+</div>
+</body>
+</html>
