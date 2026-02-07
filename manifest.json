@@ -1,0 +1,16 @@
+{
+  "name": "Bocadillos App",
+  "short_name": "BocaApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#27ae60",
+  "description": "App para gestionar el pedido de bocadillos de los 12 clientes.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1046/1046747.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
