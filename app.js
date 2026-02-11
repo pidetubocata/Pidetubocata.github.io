@@ -6,7 +6,7 @@ const bebidas = ["Cocacola", "Cocacola cero", "Fanta", "Aquarius", "Agua", "Nest
 
 const cafes = ["Café solo", "Cortado", "Café americano", "Café con leche caliente", "Café solo tocado de wisky", "Carajillo", "Bombón", "Bombón tocado", "Te negro", "Manzanilla", "Menta poleo"];
 
-const TELEFONO_ENCARGADO = "34656677867"; // PON AQUÍ EL TELÉFONO
+const TELEFONO_ENCARGADO = "34640771301"; // PON AQUÍ EL TELÉFONO
 
 // Poblar los elementos al cargar
 document.addEventListener('DOMContentLoaded', () => {
