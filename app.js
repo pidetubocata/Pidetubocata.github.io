@@ -2,11 +2,11 @@ const clientes = ["Abraham", "Carlos", "Cristián", "Enrrique", "Giovanni", "Gon
 
 const ingredientes = ["Lomo", "Pechuga de pollo", "Pechuga empanada", "Hamburguesa", "Ternera", "Bacon", "Queso", "Longaniza", "Tortilla de patata", "Tortilla de patata con cebolla", "Patatas", "Ajo aceite", "Mayonesa", "Huevo", "Pimiento", "Tomate", "Lechuga", "En plato"];
 
-const bebidas = ["Cocacola", "Cocacola cero", "Fanta", "Aquarius", "Agua", "Neste", "Zumo de piña", "Vino y gaseosa", "Cerveza", "Cerveza 00"];
+const bebidas = ["Cocacola", "Cocacola cero", "Fanta", "Aquarius", "Agua", "Neste", "Zumo de piña", "Vino y gaseosa", "Cerveza", "Agua con Gas", "Cerveza 00"];
 
 const cafes = ["Café solo", "Cortado", "Café americano", "Café con leche caliente", "Café solo tocado de wisky", "Carajillo", "Bombón", "Bombón tocado", "Te negro", "Manzanilla", "Menta poleo"];
 
-const TELEFONO_ENCARGADO = "34640771301"; // PON AQUÍ EL TELÉFONO
+const TELEFONO_ENCARGADO = "34655402581"; // PON AQUÍ EL TELÉFONO
 
 // Poblar los elementos al cargar
 document.addEventListener('DOMContentLoaded', () => {
